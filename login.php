@@ -19,11 +19,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (password_verify($password, $hashed_password)) {
    
             $_SESSION['email'] = $email;
-            header("Location: Home page\index.html");
+            header("Location: Home_page\index.html");
             exit();
         } else {
             $_SESSION['email'] = $email;
-            header("Location: Home page\index.html");
+            header("Location: Home_page\index.html");
             exit();
 
             echo "<script>alert('Invalid password.'); window.history.back();</script>";
